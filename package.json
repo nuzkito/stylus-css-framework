@@ -1,0 +1,16 @@
+{
+  "name": "stylus-css-framework",
+  "version": "0.0.0",
+  "description": "CSS framework built with Stylus",
+  "main": "",
+  "scripts": {
+    "stylus": "./node_modules/stylus/bin/stylus -u nib -I stylus < stylus/index.styl > assets/styles.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "abalozz",
+  "license": "MIT",
+  "devDependencies": {
+    "nib": "^1.0.3",
+    "stylus": "^0.48.1"
+  }
+}

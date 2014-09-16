@@ -187,10 +187,33 @@ td,
 th {
   padding: 0;
 }
+@font-face {
+  font-family: 'Arvo';
+  src: url("fonts/Arvo/Arvo.eot");
+  src: url("fonts/Arvo/Arvo.eot?#iefix") format('embedded-opentype'), url("fonts/Arvo/Arvo.woff2") format('woff2'), url("fonts/Arvo/Arvo.woff") format('woff'), url("fonts/Arvo/Arvo.ttf") format('truetype'), url("fonts/Arvo/Arvo.svg#arvoregular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DroidSerif';
+  src: url("fonts/DroidSerif/DroidSerif.eot");
+  src: url("fonts/DroidSerif/DroidSerif.eot?#iefix") format('embedded-opentype'), url("fonts/DroidSerif/DroidSerif.woff2") format('woff2'), url("fonts/DroidSerif/DroidSerif.woff") format('woff'), url("fonts/DroidSerif/DroidSerif.ttf") format('truetype'), url("fonts/DroidSerif/DroidSerif.svg#droid_serifregular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'icon';
+  src: url("fonts/icomoon/icomoon.eot?-9djqav");
+  src: url("fonts/icomoon/icomoon.eot?#iefix-9djqav") format('embedded-opentype'), url("fonts/icomoon/icomoon.woff?-9djqav") format('woff'), url("fonts/icomoon/icomoon.ttf?-9djqav") format('truetype'), url("fonts/icomoon/icomoon.svg?-9djqav#icomoon") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  font-family: 'DroidSerif';
+  color: #111;
 }
 *,
 :before,
@@ -198,6 +221,18 @@ html {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Arvo', serif;
+}
+h1,
+.h1 {
+  font-weight: normal;
 }
 .is-hidden {
   display: none !important;
@@ -247,13 +282,6 @@ html {
 }
 .Grid-cell--size12 {
   width: calc(100% - 1em);
-}
-@font-face {
-  font-family: 'icon';
-  src: url("fonts/icomoon.eot?-9djqav");
-  src: url("fonts/icomoon.eot?#iefix-9djqav") format('embedded-opentype'), url("fonts/icomoon.woff?-9djqav") format('woff'), url("fonts/icomoon.ttf?-9djqav") format('truetype'), url("fonts/icomoon.svg?-9djqav#icomoon") format('svg');
-  font-weight: normal;
-  font-style: normal;
 }
 [class^="icon-"],
 [class*=" icon-"] {

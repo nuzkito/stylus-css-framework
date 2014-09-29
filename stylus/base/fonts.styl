@@ -2,33 +2,43 @@
  * # Fuentes
  *
  * Reglas font-face.
- * Puedes usar fuentes del sistema o webfonts. O cargar tus fuentes con
- * @font-face desde aquí.
+ * Puedes usar fuentes de Google webfonts u otros, o cargar las fuentes que
+ * hayas descargado.
  */
 
+
+/**
+ * Se pueden cargar las webfonts directamente desde la fuente, en lugar de
+ * incluir un @import o un <link>. De esa forma nos ahorramos una petición.
+ * El formato woff es ampliamente soportado por los navegadores modernos
+ * http://caniuse.com/#feat=woff
+ * Puedes incluir ttf para el resto.
+ */
 @font-face {
-    font-family: 'Arvo';
-    src: url('fonts/Arvo/Arvo.eot');
-    src: url('fonts/Arvo/Arvo.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Arvo/Arvo.woff2') format('woff2'),
-         url('fonts/Arvo/Arvo.woff') format('woff'),
-         url('fonts/Arvo/Arvo.ttf') format('truetype'),
-         url('fonts/Arvo/Arvo.svg#arvoregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Droid Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Droid Serif'), local('DroidSerif'), url(http://fonts.gstatic.com/s/droidserif/v6/0AKsP294HTD-nvJgucYTaIbN6UDyHWBl620a-IRfuBk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Droid Serif';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Droid Serif Bold'), local('DroidSerif-Bold'), url(http://fonts.gstatic.com/s/droidserif/v6/QQt14e8dY39u-eYBZmppwTqR_3kx9_hJXbbyU8S6IN0.woff) format('woff');
+}
+@font-face {
+  font-family: 'Droid Serif';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Droid Serif Italic'), local('DroidSerif-Italic'), url(http://fonts.gstatic.com/s/droidserif/v6/cj2hUnSRBhwmSPr9kS5899kZXW4sYc4BjuAIFc1SXII.woff) format('woff');
+}
+@font-face {
+  font-family: 'Droid Serif';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Droid Serif Bold Italic'), local('DroidSerif-BoldItalic'), url(http://fonts.gstatic.com/s/droidserif/v6/c92rD_x0V1LslSFt3-QEpgRV2F9RPTaqyJ4QibDfkzM.woff) format('woff');
 }
 
-@font-face {
-    font-family: 'DroidSerif';
-    src: url('fonts/DroidSerif/DroidSerif.eot');
-    src: url('fonts/DroidSerif/DroidSerif.eot?#iefix') format('embedded-opentype'),
-         url('fonts/DroidSerif/DroidSerif.woff2') format('woff2'),
-         url('fonts/DroidSerif/DroidSerif.woff') format('woff'),
-         url('fonts/DroidSerif/DroidSerif.ttf') format('truetype'),
-         url('fonts/DroidSerif/DroidSerif.svg#droid_serifregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
 
 @font-face {
     font-family: 'icon';

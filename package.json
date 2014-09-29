@@ -2,15 +2,14 @@
   "name": "stylus-css-framework",
   "version": "0.0.0",
   "description": "CSS framework built with Stylus",
-  "main": "",
-  "scripts": {
-    "stylus": "./node_modules/stylus/bin/stylus -u nib -I stylus < stylus/index.styl > assets/styles.css",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "abalozz",
   "license": "MIT",
   "devDependencies": {
+    "gulp": "^3.8.8",
+    "gulp-minify-css": "^0.3.10",
+    "gulp-rename": "^1.2.0",
+    "gulp-stylus": "^1.3.3",
     "nib": "^1.0.3",
-    "stylus": "^0.48.1"
+    "stylus": "^0.49.1"
   }
 }

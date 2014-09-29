@@ -4,11 +4,17 @@ Si has creado algún mixin o quieres proponer mejoras, envía un pull request ;)
 
 ## Instalación
 
-Para funcionar, Stylus requiere instalar [Nodejs](http://nodejs.org/).
-Una vez instalado descarga los archivos, abre una terminal y ejecuta:
+tylus requiere instalar [Nodejs](http://nodejs.org/).
 
-* `npm install`
-* `npm run-script stylus`
+Se incluye un archivo de Gulp para ejecutar Stylus. Para instalarlo ejecuta:
+
+    npm install -g gulp
+    npm install
+
+Y para ejecutarlo tan solo haz:
+
+    gulp
+
 
 ## Organización
 

@@ -4,12 +4,22 @@
  * Otros estilos base
  */
 
+$fontSize ?= 16
+
 html
   box-sizing border-box
-  font-family $baseFontFamily
   color $fontColor
+  font-family $baseFontFamily
+  // El font-size se calcula en base a la variable $fontSize. Indica el tamaño
+  // base del texto en px, y lo convierte a em basándose en que el tamaño por
+  // defecto es de 16px.
+  // Al definirlo en el html, 1 REM será igual al valor de $fontSize, lo que nos
+  // facilita trabajar con medidas en el resto del documento.
+  font-size unit($fontSize / 16, 'em')
 
 *
 :before
 :after
+  // box-sizing se define en el html, y se hereda en el resto de elementos.
+  // http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
   box-sizing inherit

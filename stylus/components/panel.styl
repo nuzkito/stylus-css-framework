@@ -1,0 +1,36 @@
+/**
+ * # Panel
+ 
+  <div class="Panel">
+    <p>contenido...</p>
+  </div>
+
+ * ó con título
+
+  <div class="Panel">
+    <h3>Título</h3>
+    <p>contenido...</p>
+  </div>
+
+ */
+
+$panel-background-color ?= $white
+$panel-border-color ?= $silver
+$panel-border-width ?= 1px
+
+.Panel
+  background-color $panel-background-color
+  border $panel-border-width solid $panel-border-color
+  box-shadow 0 $panel-border-width 0 $panel-border-color
+  margin 1em auto !important
+
+  // No hay necesidad de una clase. Sabemos que va a ser un título.
+  & > h2
+  & > h3
+  & > h4
+  & > h5
+  & > h6
+    text-align center
+    margin 0
+    padding .3em
+    border-bottom $panel-border-width solid $panel-border-color

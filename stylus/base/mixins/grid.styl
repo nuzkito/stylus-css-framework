@@ -7,7 +7,7 @@ grid($columns = 8, $gap = 1em, $name = Grid)
     margin ($gap / 2)
 
   // No small, with multiples columns
-  @media (min-width 48em)
+  +mediaquery('(min-width 48em)')
     .{$name}
       display flex
       flex-wrap wrap

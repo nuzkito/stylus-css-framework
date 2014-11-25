@@ -1,14 +1,28 @@
-grid(columns = 12, margin = 1em)
-  &
-    display block
-    font-size 0
+grid($columns = 8, $gap = 1em, $name = Grid)
+  $name = unquote($name)
 
-  &-cell
-    display inline-block
-    font-size 1rem
-    margin margin
-    width s('calc(%s - %s)', 100% / columns, margin * 2)
+  // Small, one column
+  {s('[class*="%s-item--"]', $name)}
+    width s('calc(100% - %s)', $gap)
+    margin ($gap / 2)
 
-  for col in 1..columns
-    &-cell--size{col}
-      width s('calc(%s - %s)', 100% / columns * col, margin * 2)
+  // No small, with multiples columns
+  @media (min-width 48em)
+    .{$name}
+      display flex
+      flex-wrap wrap
+
+    // Base style for Grid items
+    {s('[class*="%s-item--"]', $name)}
+      width s('calc(%s - %s)', 100% / $columns, $gap)
+
+    // Columns
+    for $col in 1..$columns
+      {s('[class*="%s-item--"]', $name)}{s('[class*="--size%s"]', $col)}
+        width s('calc(%s - %s)', 100% / $columns * $col, $gap)
+
+    // Offsets
+    for $col in 1..($columns - 1)
+      {s('[class*="%s-item--"]', $name)}{s('[class*="--offset%s"]', $col)}
+        margin-left s('calc(%s + %s)', 100% / $columns * $col, $gap / 2)
+  

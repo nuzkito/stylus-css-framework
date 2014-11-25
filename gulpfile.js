@@ -20,7 +20,7 @@ gulp.task('stylus-docs', function () {
 });
 
 gulp.task('stylus-watch', ['stylus'], function () {
-  gulp.watch('./stylus/**/*.styl', ['stylus']);
+  gulp.watch('./stylus/**/*.styl', ['stylus', 'stylus-docs']);
 });
 
 gulp.task('stylus-watch-docs', ['stylus-docs'], function () {

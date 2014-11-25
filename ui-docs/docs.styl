@@ -87,3 +87,11 @@
     flex-basis 10em
     &::after
       content: '.' attr(class)
+
+.Grid
+  border 1px solid $silver
+
+[class*="Grid-item"]
+  background-color $lime
+  box-shadow 0 0 0 1px darken($lime, 20%) inset
+  padding .3em

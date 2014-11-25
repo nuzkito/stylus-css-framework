@@ -1,0 +1,89 @@
+@import '../stylus/index.styl'
+@import 'prism'
+
+.docs-Container
+  display flex
+  height 100vh
+  overflow hidden
+
+.docs-Nav
+  background-color #0074d9
+  font-size 1.2em
+  max-width 15em
+  
+  &-item
+    padding .5em 1.5em
+    color white
+    text-decoration none
+    display block
+    
+    &:hover
+      background-color rgba(255,255,255,.2) 
+
+.docs-Content
+  padding 0 1em
+  overflow auto
+  flex-basis 100%
+    
+.docs-Title
+  border-bottom 1px solid $silver
+  position sticky
+  top 0%
+  background-color $white
+  z-index 1
+  margin 1em 0 .5em
+  padding .5em
+
+.docs-ColorsContainer
+  display flex
+  flex-direction column
+[class*="docs-Color--"]
+  height 2em
+.docs-Color--white
+  background-color $white
+.docs-Color--silver
+  background-color $silver
+.docs-Color--gray
+  background-color $gray
+.docs-Color--black
+  background-color $black
+  color $white
+.docs-Color--navy
+  background-color $navy
+  color $white
+.docs-Color--blue
+  background-color $blue
+.docs-Color--aqua
+  background-color $aqua
+.docs-Color--teal
+  background-color $teal
+.docs-Color--olive
+  background-color $olive
+.docs-Color--green
+  background-color $green
+.docs-Color--lime
+  background-color $lime
+.docs-Color--yellow
+  background-color $yellow
+.docs-Color--orange
+  background-color $orange
+.docs-Color--red
+  background-color $red
+.docs-Color--maroon
+  background-color $maroon
+  color $white
+.docs-Color--fuchsia
+  background-color $fuchsia
+  color $white
+.docs-Color--purple
+  background-color $purple
+  color $white
+
+.docs-IconsContainer
+  display flex
+  flex-wrap wrap
+  [class*="icon-"]
+    margin .2em
+    flex-basis 10em
+    &::after
+      content: '.' attr(class)

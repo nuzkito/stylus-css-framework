@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Guía de estilos - Stylus Framework</title>
+  <link rel="stylesheet" href="docs.css">
+  <script src="prism.js"></script>
+</head>
+<body class="docs-Container">
+  <nav class="docs-Nav">
+    <a href="#inicio" class="docs-Nav-item">Inicio</a>
+    <a href="#tipografia" class="docs-Nav-item">Tipografía</a>
+    <a href="#iconos" class="docs-Nav-item">Iconos</a>
+    <a href="#botones" class="docs-Nav-item">Botones</a>
+    <a href="#colores" class="docs-Nav-item">Colores</a>
+    <a href="#panel" class="docs-Nav-item">Panel</a>
+  </nav>
+  <main class="docs-Content">
+    <h1 id="inicio">Guía de estilos</h1>
+
+
+    <section id="tipografia">
+      <h2 class="docs-Title">Tipografía</h2>
+      <p>Mediante las variables se pueden definir los aspectos de la tipografía:</p>
+      <pre class="language-css"><code class="language-css">$baseFontFamily = 'Droid Serif', serif
+$baseHeadingFontFamily = 'Droid Serif', serif
+$iconFontFamily = 'icon'
+$fontColor = #111
+$fontSize = 16px</code></pre>
+      <p>En el archivo <code class="language-*">base/fonts.styl</code> se cargan las fuentes externas mediante <code class="language-css">@font-face</code></p>
+      <h3>Títulos</h3>
+      <div>
+        <h1 class="h1">Título H1</h1>
+        <h2 class="h2">Título H2</h2>
+        <h3 class="h3">Título H3</h3>
+        <h4 class="h4">Título H4</h4>
+        <h5 class="h5">Título H5</h5>
+        <h6 class="h6">Título H6</h6>
+      </div>
+      <pre class="language-markup"><code class="language-markup">&lt;h1 class=&quot;h1&quot;&gt;Título H1&lt;/h1&gt;
+&lt;h2 class=&quot;h2&quot;&gt;Título H2&lt;/h2&gt;
+&lt;h3 class=&quot;h3&quot;&gt;Título H3&lt;/h3&gt;
+&lt;h4 class=&quot;h4&quot;&gt;Título H4&lt;/h4&gt;
+&lt;h5 class=&quot;h5&quot;&gt;Título H5&lt;/h5&gt;
+&lt;h6 class=&quot;h6&quot;&gt;Título H6&lt;/h6&gt;</code></pre>
+    </section>
+
+
+    <section id="iconos">
+      <h2 class="docs-Title">Iconos</h2>
+      <div class="docs-IconsContainer">
+        <span class="icon-embed"></span>
+        <span class="icon-code"></span>
+        <span class="icon-share"></span>
+        <span class="icon-googleplus"></span>
+        <span class="icon-facebook"></span>
+        <span class="icon-twitter"></span>
+        <span class="icon-github"></span>
+        <span class="icon-html5"></span>
+        <span class="icon-css3"></span>
+        <span class="icon-chrome"></span>
+        <span class="icon-firefox"></span>
+        <span class="icon-IE"></span>
+        <span class="icon-opera"></span>
+        <span class="icon-safari"></span>
+        <span class="icon-IcoMoon"></span>
+      </div>
+    </section>
+
+
+    <section id="botones">
+      <h2 class="docs-Title">Botones</h2>
+      <button class="Button">Enviar</button>
+      <pre class="language-markup"><code class="language-markup">&lt;button class=&quot;Button&quot;&gt;Enviar&lt;/button&gt;</code></pre>
+      <a href="#" class="Button">Enviar</a>
+      <pre class="language-markup"><code class="language-markup">&lt;a href=&quot;#&quot; class=&quot;Button&quot;&gt;Enviar&lt;/a&gt;</code></pre>
+    </section>
+
+
+    <section id="colores">
+      <h2 class="docs-Title">Colores</h2>
+      <p>Se usan las siguientes variables para almacenar los colores:</p>
+      <div class="docs-ColorsContainer">
+        <div class="docs-Color--white">$white</div>
+        <div class="docs-Color--silver">$silver</div>
+        <div class="docs-Color--gray">$gray</div>
+        <div class="docs-Color--black">$black</div>
+        <div class="docs-Color--navy">$navy</div>
+        <div class="docs-Color--blue">$blue</div>
+        <div class="docs-Color--aqua">$aqua</div>
+        <div class="docs-Color--teal">$teal</div>
+        <div class="docs-Color--olive">$olive</div>
+        <div class="docs-Color--green">$green</div>
+        <div class="docs-Color--lime">$lime</div>
+        <div class="docs-Color--yellow">$yellow</div>
+        <div class="docs-Color--orange">$orange</div>
+        <div class="docs-Color--red">$red</div>
+        <div class="docs-Color--maroon">$maroon</div>
+        <div class="docs-Color--fuchsia">$fuchsia</div>
+        <div class="docs-Color--purple">$purple</div>
+      </div>
+    </section>
+
+    <section id="panel">
+      <h2 class="docs-Title">Panel</h2>
+      <div class="Panel">
+        <h3>Título</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati architecto repellat aspernatur tempore veniam, similique at quibusdam blanditiis perspiciatis reprehenderit veritatis in deleniti recusandae, excepturi porro sint quo. Voluptates, sequi.</p>
+      </div>
+      <pre class="language-markup"><code class="language-markup">&lt;div class=&quot;Panel&quot;&gt;
+  &lt;h3&gt;Título&lt;/h3&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati architecto repellat aspernatur tempore veniam, similique at quibusdam blanditiis perspiciatis reprehenderit veritatis in deleniti recusandae, excepturi porro sint quo. Voluptates, sequi.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+    </section>
+  </main>
+</body>
+</html>
